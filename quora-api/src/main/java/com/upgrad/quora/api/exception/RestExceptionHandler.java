@@ -12,14 +12,14 @@ import org.springframework.web.context.request.WebRequest;
 public class RestExceptionHandler {
 
     @ExceptionHandler(UserNotFoundException.class)
-    public ResponseEntity<ErrorResponse> userNotFoundException(UserNotFoundException exception, WebRequest request){
+    public ResponseEntity<ErrorResponse> userNotFoundException(UserNotFoundException exception, WebRequest request) {
         return new ResponseEntity<ErrorResponse>(
                 new ErrorResponse().code(exception.getCode()).message(exception.getErrorMessage()), HttpStatus.NOT_FOUND
         );
     }
 
     @ExceptionHandler(AuthorizationFailedException.class)
-    public ResponseEntity<ErrorResponse> authorizationFailedException(AuthorizationFailedException exception, WebRequest request){
+    public ResponseEntity<ErrorResponse> authorizationFailedException(AuthorizationFailedException exception, WebRequest request) {
         return new ResponseEntity<ErrorResponse>(
                 new ErrorResponse().code(exception.getCode()).message(exception.getErrorMessage()), HttpStatus.FORBIDDEN
         );
@@ -40,7 +40,7 @@ public class RestExceptionHandler {
     }
 
     @ExceptionHandler(SignOutRestrictedException.class)
-    public ResponseEntity<ErrorResponse> signOutRestrictedException(SignOutRestrictedException exception, WebRequest request){
+    public ResponseEntity<ErrorResponse> signOutRestrictedException(SignOutRestrictedException exception, WebRequest request) {
         return new ResponseEntity<ErrorResponse>(
                 new ErrorResponse().code(exception.getCode()).message(exception.getErrorMessage()), HttpStatus.UNAUTHORIZED
         );
@@ -48,6 +48,13 @@ public class RestExceptionHandler {
 
     @ExceptionHandler(InvalidQuestionException.class)
     public ResponseEntity<ErrorResponse> invalidQuestionException(InvalidQuestionException exception, WebRequest request) {
+        return new ResponseEntity<ErrorResponse>(
+                new ErrorResponse().code(exception.getCode()).message(exception.getErrorMessage()), HttpStatus.NOT_FOUND
+        );
+    }
+
+    @ExceptionHandler(AnswerNotFoundException.class)
+    public ResponseEntity<ErrorResponse> answerNotFoundException(AnswerNotFoundException exception, WebRequest request) {
         return new ResponseEntity<ErrorResponse>(
                 new ErrorResponse().code(exception.getCode()).message(exception.getErrorMessage()), HttpStatus.NOT_FOUND
         );

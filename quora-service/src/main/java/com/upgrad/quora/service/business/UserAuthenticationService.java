@@ -27,13 +27,6 @@ public class UserAuthenticationService {
     @Autowired
     private PasswordCryptographyProvider passwordCryptographyProvider;
 
-    /**
-     * This method checks if the username and email exist in the DB.
-     * if the username or email doesn't exist in the DB.then assign uuid to the user.
-     * Assign encrypted password and salt to the user.
-     *
-     * @throws SignUpRestrictedException SGR-001 if the username exist in the DB , SGR-002 if the email exist in the DB.
-     */
     @Transactional(propagation = Propagation.REQUIRED)
     public UserEntity signup(UserEntity userEntity) throws SignUpRestrictedException {
         if (isUserNameInUse(userEntity.getUserName())) {
@@ -80,12 +73,6 @@ public class UserAuthenticationService {
         return userAuthEntity;
     }
 
-    /**
-     * This method is used by user to signout.
-     * @param accessToken Access token of the user.
-     * @return UserEntity details of the signed out user.
-     * @throws SignOutRestrictedException SGR-001 if the access-token is not present in the DB.
-     */
     @Transactional(propagation = Propagation.REQUIRED)
     public UserEntity signout(final String accessToken) throws SignOutRestrictedException {
         UserAuthEntity userAuthEntity = userAuthDao.getUserAuthByToken(accessToken);

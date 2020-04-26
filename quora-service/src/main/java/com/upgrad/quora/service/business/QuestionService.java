@@ -24,7 +24,7 @@ public class QuestionService {
     private QuestionDao questionDao;
 
     @Transactional
-    public void createQuestion(QuestionEntity questionEntity, final String accessToken) throws AuthorizationFailedException {
+    public QuestionEntity createQuestion(QuestionEntity questionEntity, final String accessToken) throws AuthorizationFailedException {
         UserAuthEntity userAuthEntity = userAuthDao.getUserAuthByToken(accessToken);
         if (userAuthEntity == null) {
             throw new AuthorizationFailedException("ATHR-001", "User has not signed in");
@@ -34,7 +34,7 @@ public class QuestionService {
         questionEntity.setDate(ZonedDateTime.now());
         questionEntity.setUuid(UUID.randomUUID().toString());
         questionEntity.setUserEntity(userAuthEntity.getUserEntity());
-        questionDao.createQuestion(questionEntity);
+        return questionDao.createQuestion(questionEntity);
     }
 
     public List<QuestionEntity> getAllQuestions(final String accessToken) throws AuthorizationFailedException {

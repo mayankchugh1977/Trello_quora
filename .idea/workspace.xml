@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47a15d9d-c79e-46a9-bbbf-df38ac55657d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/quora-api/src/main/java/com/upgrad/quora/api/controller/QuestionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quora-service/src/main/java/com/upgrad/quora/service/business/QuestionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quora-service/src/main/java/com/upgrad/quora/service/dao/QuestionDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quora-service/src/main/java/com/upgrad/quora/service/entity/QuestionEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quora-api/src/main/java/com/upgrad/quora/api/controller/AnswerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quora-service/src/main/java/com/upgrad/quora/service/business/AnswerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quora-service/src/main/java/com/upgrad/quora/service/dao/AnswerDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quora-service/src/main/java/com/upgrad/quora/service/entity/AnswerEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quora-api/src/main/java/com/upgrad/quora/api/controller/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/quora-api/src/main/java/com/upgrad/quora/api/controller/QuestionController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quora-api/src/main/java/com/upgrad/quora/api/exception/RestExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/quora-api/src/main/java/com/upgrad/quora/api/exception/RestExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quora-api/target/generated-sources/com/upgrad/quora/api/model/AnswerDeleteResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/quora-api/target/generated-sources/com/upgrad/quora/api/model/AnswerDeleteResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quora-api/target/generated-sources/com/upgrad/quora/api/model/AnswerDetailsResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/quora-api/target/generated-sources/com/upgrad/quora/api/model/AnswerDetailsResponse.java" afterDir="false" />
@@ -27,6 +28,8 @@
       <change beforePath="$PROJECT_DIR$/quora-api/target/generated-sources/com/upgrad/quora/api/model/SignupUserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/quora-api/target/generated-sources/com/upgrad/quora/api/model/SignupUserResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quora-api/target/generated-sources/com/upgrad/quora/api/model/UserDeleteResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/quora-api/target/generated-sources/com/upgrad/quora/api/model/UserDeleteResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quora-api/target/generated-sources/com/upgrad/quora/api/model/UserDetailsResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/quora-api/target/generated-sources/com/upgrad/quora/api/model/UserDetailsResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quora-service/src/main/java/com/upgrad/quora/service/business/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/quora-service/src/main/java/com/upgrad/quora/service/business/QuestionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quora-service/src/main/java/com/upgrad/quora/service/business/UserAuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/quora-service/src/main/java/com/upgrad/quora/service/business/UserAuthenticationService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -267,7 +270,7 @@
       <workItem from="1586816652426" duration="616000" />
       <workItem from="1586901377446" duration="2951000" />
       <workItem from="1587277397987" duration="2901000" />
-      <workItem from="1587863549414" duration="13643000" />
+      <workItem from="1587863549414" duration="16850000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit after setting envirnoment in IntelliJ">
       <created>1586584896982</created>
@@ -325,7 +328,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587882501705</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Question Add/Update/get All Commit">
+      <created>1587885503864</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1587885503864</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -336,73 +346,74 @@
     <MESSAGE value="First Commit after setting envirnoment in IntelliJ" />
     <MESSAGE value="User Profile Commit" />
     <MESSAGE value="User Profile Add/Update/Delete/Authenticate Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="User Profile Add/Update/Delete/Authenticate Commit" />
+    <MESSAGE value="Question Add/Update/get All Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Question Add/Update/get All Commit" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1587882500056">
+    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1587885500153">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587882500056" />
+    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587885500153" />
     <state x="740" y="221" key="FileChooserDialogImpl" timestamp="1586681599688">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="221" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586681599688" />
-    <state width="1877" height="398" key="GridCell.Tab.0.bottom" timestamp="1587883484462">
+    <state width="1877" height="179" key="GridCell.Tab.0.bottom" timestamp="1587888456298">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="398" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587883484462" />
-    <state width="1877" height="398" key="GridCell.Tab.0.center" timestamp="1587883484462">
+    <state width="1877" height="179" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587888456298" />
+    <state width="1877" height="179" key="GridCell.Tab.0.center" timestamp="1587888456298">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="398" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587883484462" />
-    <state width="1877" height="398" key="GridCell.Tab.0.left" timestamp="1587883484462">
+    <state width="1877" height="179" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587888456298" />
+    <state width="1877" height="179" key="GridCell.Tab.0.left" timestamp="1587888456298">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="398" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587883484462" />
-    <state width="1877" height="398" key="GridCell.Tab.0.right" timestamp="1587883484462">
+    <state width="1877" height="179" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587888456298" />
+    <state width="1877" height="179" key="GridCell.Tab.0.right" timestamp="1587888456298">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="398" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587883484462" />
-    <state width="1877" height="398" key="GridCell.Tab.1.bottom" timestamp="1587883965614">
+    <state width="1877" height="179" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587888456298" />
+    <state width="1877" height="179" key="GridCell.Tab.1.bottom" timestamp="1587888456299">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="398" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587883965614" />
-    <state width="1877" height="398" key="GridCell.Tab.1.center" timestamp="1587883965614">
+    <state width="1877" height="179" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587888456299" />
+    <state width="1877" height="179" key="GridCell.Tab.1.center" timestamp="1587888456298">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="398" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587883965614" />
-    <state width="1877" height="398" key="GridCell.Tab.1.left" timestamp="1587883965614">
+    <state width="1877" height="179" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587888456298" />
+    <state width="1877" height="179" key="GridCell.Tab.1.left" timestamp="1587888456298">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="398" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587883965614" />
-    <state width="1877" height="398" key="GridCell.Tab.1.right" timestamp="1587883965614">
+    <state width="1877" height="179" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587888456298" />
+    <state width="1877" height="179" key="GridCell.Tab.1.right" timestamp="1587888456298">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="398" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587883965614" />
-    <state width="1877" height="398" key="GridCell.Tab.2.bottom" timestamp="1587883484232">
+    <state width="1877" height="179" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587888456298" />
+    <state width="1877" height="398" key="GridCell.Tab.2.bottom" timestamp="1587888261783">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="398" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587883484232" />
-    <state width="1877" height="398" key="GridCell.Tab.2.center" timestamp="1587883484232">
+    <state width="1877" height="398" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587888261783" />
+    <state width="1877" height="398" key="GridCell.Tab.2.center" timestamp="1587888261783">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="398" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587883484232" />
-    <state width="1877" height="398" key="GridCell.Tab.2.left" timestamp="1587883484231">
+    <state width="1877" height="398" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587888261783" />
+    <state width="1877" height="398" key="GridCell.Tab.2.left" timestamp="1587888261783">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="398" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587883484231" />
-    <state width="1877" height="398" key="GridCell.Tab.2.right" timestamp="1587883484232">
+    <state width="1877" height="398" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587888261783" />
+    <state width="1877" height="398" key="GridCell.Tab.2.right" timestamp="1587888261783">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="398" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587883484232" />
+    <state width="1877" height="398" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587888261783" />
     <state x="625" y="219" key="NewModule_or_Project.wizard" timestamp="1586681626641">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="625" y="219" key="NewModule_or_Project.wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1586681626641" />
-    <state x="552" y="241" key="Vcs.Push.Dialog.v2" timestamp="1587882504154">
+    <state x="552" y="241" key="Vcs.Push.Dialog.v2" timestamp="1587885555845">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="241" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587882504154" />
+    <state x="552" y="241" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587885555845" />
     <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1587283780998">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -498,12 +509,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/quora-api/src/main/java/com/upgrad/quora/api/controller/QuestionController.java</url>
-          <line>29</line>
+          <line>26</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/quora-service/src/main/java/com/upgrad/quora/service/business/QuestionService.java</url>
-          <line>27</line>
+          <line>33</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -513,22 +524,22 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/quora-api/src/main/java/com/upgrad/quora/api/controller/QuestionController.java</url>
-          <line>33</line>
+          <line>30</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/quora-api/src/main/java/com/upgrad/quora/api/controller/QuestionController.java</url>
-          <line>51</line>
+          <line>48</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/quora-api/src/main/java/com/upgrad/quora/api/controller/QuestionController.java</url>
-          <line>38</line>
+          <line>35</line>
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/quora-api/src/main/java/com/upgrad/quora/api/controller/QuestionController.java</url>
-          <line>52</line>
+          <line>49</line>
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -583,7 +594,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/quora-service/src/main/java/com/upgrad/quora/service/business/UserAuthenticationService.java</url>
-          <line>55</line>
+          <line>48</line>
           <properties class="com.upgrad.quora.service.business.UserAuthenticationService" method="signin" />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
