@@ -52,13 +52,6 @@ public class UserAuthenticationService {
         return userDao.createUser(userEntity);
     }
 
-    /**
-     * This method is used for the user to signin.
-     * @param username Username of the user who is singing in.
-     * @param password Credentials of the user who is singing in
-     * @return UserAuthEntity which contains the access-token and other details.
-     * @throws AuthenticationFailedException ATH-001 if the username doesn't exist in DB or ATH-002 if the password is wrong.
-     */
     @Transactional(propagation = Propagation.REQUIRED)
     public UserAuthEntity signin(final String username, final String password) throws AuthenticationFailedException {
 

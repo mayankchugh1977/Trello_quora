@@ -56,12 +56,6 @@ public class UserController {
         return new ResponseEntity<SignupUserResponse>(userResponse, HttpStatus.CREATED);
     }
 
-    /**
-     * This method is for a user to singin.
-     * @param authorization is basic auth (base 64 encoded). Usage: Basic <Base 64 Encoded username:password>
-     * @return SigninResponse which contains user id and a access-token in the response header.
-     * @throws AuthenticationFailedException ATH-001 if username doesn't exist, ATH-002 if password is wrong.
-     */
     @RequestMapping(method = RequestMethod.POST, path = "/user/signin", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public ResponseEntity<SigninResponse> signin(@RequestHeader("authorization") final String authorization) throws AuthenticationFailedException {
 
@@ -80,12 +74,6 @@ public class UserController {
         return new ResponseEntity<SigninResponse>(signinResponse, headers, HttpStatus.OK);
     }
 
-    /**
-     * This method is used to signout user.
-     * @param accessToken Token used for authenticating the user.
-     * @return UUID of the user who is signed out.
-     * @throws SignOutRestrictedException if the
-     */
     @RequestMapping(method = RequestMethod.POST, path = "/user/signout", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public ResponseEntity<SignoutResponse> signout(@RequestHeader("authorization") final String accessToken) throws SignOutRestrictedException {
         UserEntity userEntity = userAuthService.signout(accessToken);

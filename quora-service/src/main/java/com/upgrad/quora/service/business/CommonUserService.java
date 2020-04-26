@@ -18,11 +18,6 @@ public class CommonUserService {
     @Autowired
     UserDao userDao;
 
-    /**
-     * This method checks if the access token exist in the DB and it is not logged out.
-     * @param accessToken token to be validated.
-     * @throws AuthorizationFailedException ATHR-001 if the token doesn't exit in the DB , ATHR-002 if the user has already logged out using the token.
-     */
     public void checkIfTokenIsValid(String accessToken) throws AuthorizationFailedException {
         UserAuthEntity userAuthEntity = userAuthDao.getUserAuthByToken(accessToken);
         if (userAuthEntity == null) {
@@ -33,12 +28,6 @@ public class CommonUserService {
         }
     }
 
-    /**
-     * This methods gets the user details based on the userId passed.
-     * @param userId Id of the user whose information is to be fetched.
-     * @return
-     * @throws UserNotFoundException USR-001 if the user with given id doesn't exist in DB.
-     */
     public UserEntity getUserById(final String userId) throws UserNotFoundException {
         UserEntity userEntity = userDao.getUserById(userId);
         if (userEntity == null) {
