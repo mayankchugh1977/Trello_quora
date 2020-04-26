@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="47a15d9d-c79e-46a9-bbbf-df38ac55657d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quora-api/src/main/java/com/upgrad/quora/api/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/quora-api/src/main/java/com/upgrad/quora/api/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quora-service/src/main/java/com/upgrad/quora/service/business/CommonUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/quora-service/src/main/java/com/upgrad/quora/service/business/CommonUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quora-service/src/main/java/com/upgrad/quora/service/business/UserAuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/quora-service/src/main/java/com/upgrad/quora/service/business/UserAuthenticationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quora-service/src/main/java/com/upgrad/quora/service/dao/UserAuthDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/quora-service/src/main/java/com/upgrad/quora/service/dao/UserAuthDao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +54,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="firstBranch" />
+        <entry key="$PROJECT_DIR$" value="UserConfig" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -247,7 +243,7 @@
       <workItem from="1586816652426" duration="616000" />
       <workItem from="1586901377446" duration="2951000" />
       <workItem from="1587277397987" duration="2901000" />
-      <workItem from="1587863549414" duration="10281000" />
+      <workItem from="1587863549414" duration="10666000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit after setting envirnoment in IntelliJ">
       <created>1586584896982</created>
@@ -291,7 +287,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587881737711</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="User Profile Add/Update/Delete/Authenticate Commit">
+      <created>1587882064837</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1587882064837</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -305,10 +308,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="User Profile Add/Update/Delete/Authenticate Commit" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1587881735966">
+    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1587882482958">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587881735966" />
+    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587882482958" />
     <state x="740" y="221" key="FileChooserDialogImpl" timestamp="1586681599688">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -365,10 +368,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="625" y="219" key="NewModule_or_Project.wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1586681626641" />
-    <state x="552" y="241" key="Vcs.Push.Dialog.v2" timestamp="1587881772635">
+    <state x="552" y="241" key="Vcs.Push.Dialog.v2" timestamp="1587882067940">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="241" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587881772635" />
+    <state x="552" y="241" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587882067940" />
     <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1587283780998">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
